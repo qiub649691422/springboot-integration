@@ -1,0 +1,8 @@
+com\liqiubo\stream\controller\OrderController.class
+com\liqiubo\stream\entity\Foo.class
+com\liqiubo\stream\entity\Bar.class
+com\liqiubo\stream\example\SendMessage1.class
+com\liqiubo\stream\StreamKafkaApplication.class
+com\liqiubo\stream\channel\OrderChannel.class
+com\liqiubo\stream\example\ProcessorService.class
+com\liqiubo\stream\example\SendMessage2.class

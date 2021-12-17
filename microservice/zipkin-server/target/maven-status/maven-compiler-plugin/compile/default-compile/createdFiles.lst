@@ -1,0 +1,4 @@
+com\liqiubo\zipkin\agent\AgentExample.class
+com\liqiubo\zipkin\agent\TestAgent.class
+com\liqiubo\zipkin\ZipkinServerApplication.class
+com\liqiubo\zipkin\chain\Request.class

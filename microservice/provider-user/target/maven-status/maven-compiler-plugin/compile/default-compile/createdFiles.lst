@@ -1,0 +1,6 @@
+com\liqiubo\provider\controller\UserController.class
+com\liqiubo\provider\dao\UserDao$1.class
+com\liqiubo\provider\dao\UserDao.class
+com\liqiubo\provider\ProviderUserApplication.class
+com\liqiubo\provider\service\UserService.class
+com\liqiubo\provider\entity\User.class

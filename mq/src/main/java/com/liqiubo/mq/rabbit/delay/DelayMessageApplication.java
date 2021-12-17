@@ -1,0 +1,17 @@
+/*
+ * <P> Copyright (c) 2021. LiQiubo.  版权所有 李秋波 </p>.
+ *
+ */
+
+package com.liqiubo.mq.rabbit.delay;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class DelayMessageApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(DelayMessageApplication.class, args);
+	}
+}

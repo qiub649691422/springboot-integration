@@ -1,0 +1,24 @@
+1. 下载安装protobuf
+https://github.com/protocolbuffers/protobuf/releases
+https://github.com/protocolbuffers/protobuf/releases/download/v3.17.3/protoc-3.17.3-win64.zip
+2. 添加依赖
+    <dependency>
+        <groupId>com.google.protobuf</groupId>
+        <artifactId>protobuf-java</artifactId>
+        <version>3.4.0</version>
+    </dependency>
+    https://github.com/protocolbuffers/protobuf/tree/master/java   maven依赖版本与安装程序要对应
+3. 编写proto文件
+    syntax = "proto2";
+
+    package protocol;
+
+    option java_package = "com.demo.netty.protobuf";
+    option java_outer_classname = "UserProto";
+
+    message UserProtocol {
+        required string id = 1;
+        required string name = 2;
+    }
+4. 生成 proto.java
+   protoc --java_out=./  UserProto.proto

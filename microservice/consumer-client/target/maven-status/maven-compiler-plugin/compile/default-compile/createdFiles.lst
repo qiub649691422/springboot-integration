@@ -1,0 +1,9 @@
+com\liqiubo\consumer\controller\UserController.class
+com\liqiubo\hystrix\HystrixCacheService.class
+com\liqiubo\hystrix\HystrixDemoController.class
+com\liqiubo\consumer\entity\AddressBean.class
+com\liqiubo\hystrix\SpringCloudHystrixDemoApplication.class
+com\liqiubo\consumer\entity\User.class
+com\liqiubo\consumer\entity\Address.class
+com\liqiubo\consumer\ConsumerClientApplication.class
+com\liqiubo\hystrix\HystrixRequestContextServletFilter.class

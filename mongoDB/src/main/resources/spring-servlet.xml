@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:context="http://www.springframework.org/schema/context" 
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop" 
+	xmlns:cache="http://www.springframework.org/schema/cache"
+	xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+	xsi:schemaLocation="  
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd  
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd  
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd  
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd  
+        http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd  
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+
+        http://www.springframework.org/schema/data/mongo 
+        http://www.springframework.org/schema/data/mongo/spring-mongo.xsd">  
+    
+    <!-- mongodb 的基本配置  -->
+    <mongo:mongo-client host="192.168.110.133" port="27017" />
+	
+    <!--连接池工厂配置 -->
+    <mongo:db-factory id="mongoDbFactory" dbname="five" mongo-ref="mongo"/>
+	
+	<!-- 转换器配置 -->
+	<!-- <mongo:mapping-converter base-package="ai.yunxi.sp">
+	  <mongo:custom-converters>
+	      <mongo:converter>
+	        <bean class="ai.yunxi.sp.convert.BigDecimalToDecimal128Converter"/>
+	      </mongo:converter>
+	      <mongo:converter>
+	        <bean class="ai.yunxi.sp.convert.Decimal128ToBigDecimalConverter"/>
+	      </mongo:converter>
+      </mongo:custom-converters>
+	</mongo:mapping-converter> -->
+	
+	<bean id="mappingContext" class="org.springframework.data.mongodb.core.mapping.MongoMappingContext"></bean>
+	<bean id="customMongoTypeMapper" class="org.springframework.data.mongodb.core.convert.DefaultMongoTypeMapper">
+		<constructor-arg name="typeKey"><null/></constructor-arg> <!-- 去掉_class字段 -->	
+	</bean>
+	<bean id="mappingMongoConverter" class="org.springframework.data.mongodb.core.convert.MappingMongoConverter">
+		<constructor-arg name="mongoDbFactory" ref="mongoDbFactory"/>
+		<constructor-arg name="mappingContext" ref="mappingContext"/>
+		<property name="typeMapper" ref="customMongoTypeMapper"/>
+	</bean>
+    <!-- template 配置 -->
+    <bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+        <constructor-arg name="mongoDbFactory" ref="mongoDbFactory" />
+        <constructor-arg name="mongoConverter" ref="mappingMongoConverter"/>
+    </bean>
+</beans>

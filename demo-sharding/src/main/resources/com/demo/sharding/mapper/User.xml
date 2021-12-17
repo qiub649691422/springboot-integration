@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ <P> Copyright (c) 2021. LiQiubo.  版权所有 李秋波 </p>.
+  ~
+  -->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.sharding.mapper.UserMapper">
+
+    <insert id="save" parameterType="com.demo.sharding.model.User">
+        INSERT INTO t_user(id, name) VALUES(#{id}, #{name});
+    </insert>
+
+    <select id="getUsers" resultType="com.demo.sharding.model.User">
+        SELECT * FROM t_user;
+    </select>
+
+</mapper>

@@ -1,0 +1,12 @@
+D:\gitRepo\spring-integration\microservice\stream-kafka\src\main\java\com\liqiubo\stream\example\ProcessorService.java
+D:\gitRepo\spring-integration\microservice\stream-kafka\src\main\java\com\liqiubo\stream\aggr\processor\ProcessorApplication.java
+D:\gitRepo\spring-integration\microservice\stream-kafka\src\main\java\com\liqiubo\stream\channel\OrderChannel.java
+D:\gitRepo\spring-integration\microservice\stream-kafka\src\main\java\com\liqiubo\stream\aggr\source\SourceApplication.java
+D:\gitRepo\spring-integration\microservice\stream-kafka\src\main\java\com\liqiubo\stream\SampleAggregateApplication.java
+D:\gitRepo\spring-integration\microservice\stream-kafka\src\main\java\com\liqiubo\stream\StreamKafkaApplication.java
+D:\gitRepo\spring-integration\microservice\stream-kafka\src\main\java\com\liqiubo\stream\example\SendMessage1.java
+D:\gitRepo\spring-integration\microservice\stream-kafka\src\main\java\com\liqiubo\stream\entity\Foo.java
+D:\gitRepo\spring-integration\microservice\stream-kafka\src\main\java\com\liqiubo\stream\controller\OrderController.java
+D:\gitRepo\spring-integration\microservice\stream-kafka\src\main\java\com\liqiubo\stream\entity\Bar.java
+D:\gitRepo\spring-integration\microservice\stream-kafka\src\main\java\com\liqiubo\stream\example\SendMessage2.java
+D:\gitRepo\spring-integration\microservice\stream-kafka\src\main\java\com\liqiubo\stream\aggr\sink\SinkApplication.java

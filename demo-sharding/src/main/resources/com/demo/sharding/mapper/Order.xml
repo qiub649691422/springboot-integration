@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ <P> Copyright (c) 2021. LiQiubo.  版权所有 李秋波 </p>.
+  ~
+  -->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.sharding.mapper.OrderMapper">
+
+    <insert id="save" useGeneratedKeys="true" keyProperty="id"
+            parameterType="com.demo.sharding.model.Order">
+        INSERT INTO t_order(user_id, order_id) VALUES(#{userId}, #{orderId});
+    </insert>
+
+    <select id="selectHint" resultType="com.demo.sharding.model.Order">
+        SELECT * FROM t_order;
+    </select>
+
+</mapper>
