@@ -4,17 +4,17 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd  
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<context:annotation-ai.yunxi.im.client.config />
+	<context:annotation-com.liqiubo.zookeeper />
 
-	<context:component-scan base-package="ai.yunxi.demo" />
+	<context:component-scan base-package="com.liqiubo.zookeeper" />
 
-	<bean id="zkCentralConfigurer" class="ai.yunxi.demo.ai.yunxi.im.client.config.ZookeeperCentralConfigurer">
+	<bean id="zkCentralConfigurer" class="com.liqiubo.zookeeper.config.ZookeeperCentralConfigurer">
 		<constructor-arg name="zkServers" value="192.168.56.101:2181" />
 		<constructor-arg name="sessionTimeout" value="1000" />
 		<constructor-arg name="zkPath" value="/Jdbc" />
 	</bean>
 
-	<bean id="zkPlaceholderConfigurer" class="ai.yunxi.demo.ai.yunxi.im.client.config.ZookeeperPlaceholderConfigurer">
+	<bean id="zkPlaceholderConfigurer" class="com.liqiubo.zookeeper.config.ZookeeperPlaceholderConfigurer">
 		<property name="zkCentralConfigurer" ref="zkCentralConfigurer" />
 		<property name="ignoreUnresolvablePlaceholders" value="true" />
 		<property name="order" value="1" />

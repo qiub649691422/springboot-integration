@@ -12,6 +12,8 @@ public class ZKSessionDemo implements Watcher {
 	private static final CountDownLatch cdl = new CountDownLatch(1);
 
 	public static void main(String[] args) throws IOException, InterruptedException {
+//		控制不同客户端访问目录
+//		ZooKeeper zk = new ZooKeeper("192.168.56.101:2181,192.168.56.101:2182/app", 5000, new ZKSessionDemo());
 		ZooKeeper zk = new ZooKeeper("192.168.56.101:2181,192.168.56.101:2182", 5000, new ZKSessionDemo());
 		cdl.await();
 		long sessionId = zk.getSessionId();

@@ -11,7 +11,7 @@
 	<mvc:annotation-driven
 		content-negotiation-manager="contentNegotiationManager" />
 
-	<context:component-scan base-package="ai.yunxi.demo">
+	<context:component-scan base-package="com.liqiubo.zookeeper">
 		<context:include-filter type="annotation"
 			expression="org.springframework.stereotype.Controller" />
 		<context:exclude-filter type="annotation"

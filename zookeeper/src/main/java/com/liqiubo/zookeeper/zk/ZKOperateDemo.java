@@ -15,7 +15,7 @@ public class ZKOperateDemo implements Watcher {
 	private static final CountDownLatch cdl = new CountDownLatch(1);
 
 	public static void main(String[] args) throws IOException, InterruptedException, KeeperException {
-		ZooKeeper zk = new ZooKeeper("192.168.56.101:2181", 5000, new ZKOperateDemo());
+		ZooKeeper zk = new ZooKeeper("192.168.1.129:2181", 5000, new ZKOperateDemo());
 		cdl.await();
 
 		String path1 = zk.create("/zk-test-", "123".getBytes(), Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);

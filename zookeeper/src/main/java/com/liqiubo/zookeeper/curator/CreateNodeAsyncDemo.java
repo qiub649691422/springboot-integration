@@ -31,7 +31,7 @@ public class CreateNodeAsyncDemo {
 		client.create().creatingParentsIfNeeded().withMode(CreateMode.EPHEMERAL).inBackground(new BackgroundCallback() {
 			@Override
 			public void processResult(CuratorFramework client, CuratorEvent event) throws Exception {
-				System.out.println("event code: " + event.getResultCode() + ", type: " + event.getType());
+				System.out.println("event code1: " + event.getResultCode() + ", type: " + event.getType());
 				cdl.countDown();
 			}
 		}).forPath(path, "test".getBytes());

@@ -11,7 +11,7 @@
 
 	<tx:annotation-driven transaction-manager="transactionManager" />
 
-	<context:component-scan base-package="ai.yunxi.demo.*.jdbc" />
+	<context:component-scan base-package="com.liqiubo.mq.rabbit.transaction_xa.*.jdbc" />
 
 	<!-- 配置jdbcTemplate -->
 	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">

@@ -42,6 +42,7 @@ public class ZKChildrenDemo implements Watcher {
 				cdl.countDown();
 			} else if (event.getType() == EventType.NodeChildrenChanged) {
 				try {
+					// zk原生api需要设置watch=true来重复监听节点，不然只会触发一次watch通知
 					System.out.println("Child: " + zk.getChildren(event.getPath(), true));
 				} catch (Exception e) {
 				}
