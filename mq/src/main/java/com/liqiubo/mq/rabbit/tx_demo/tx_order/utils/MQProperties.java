@@ -1,11 +1,5 @@
 package com.liqiubo.mq.rabbit.tx_demo.tx_order.utils;
 
-/**
- * 
- * @author 小五老师-云析学院
- * @createTime 2018年12月11日 下午4:40:00
- * 
- */
 public class MQProperties {
 
 	public static final String QUEUE_NAME_TX="tx.order";

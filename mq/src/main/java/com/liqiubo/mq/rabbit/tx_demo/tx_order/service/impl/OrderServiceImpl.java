@@ -13,12 +13,6 @@ import org.springframework.web.client.RestTemplate;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.MessageProperties;
 
-/**
- * 
- * @author 小五老师
- * @createTime 2018年7月24日 上午11:48:27 
- * 
- */
 @Service
 public class OrderServiceImpl implements IOrderService {
 

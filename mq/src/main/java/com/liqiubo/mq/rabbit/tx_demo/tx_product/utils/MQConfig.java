@@ -9,12 +9,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 
-/**
- * 
- * @author 小五老师-云析学院
- * @createTime 2018年10月26日 下午3:55:43
- * 
- */
 @Configuration
 public class MQConfig {
 

@@ -11,12 +11,6 @@ import com.liqiubo.mq.rabbit.delay.utils.RedisUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-/**
- * 
- * @author 小五老师
- * @createTime 2018年7月22日 下午8:55:32
- * 
- */
 @Service("redisDelayMessageServiceImpl")
 public class RedisDelayMessageServiceImpl implements DelayMessageService {
 

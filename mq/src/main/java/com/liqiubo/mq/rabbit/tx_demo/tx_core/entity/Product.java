@@ -2,12 +2,6 @@ package com.liqiubo.mq.rabbit.tx_demo.tx_core.entity;
 
 import java.io.Serializable;
 
-/**
- * 
- * @author 小五老师
- * @createTime 2018年7月24日 上午11:48:27 
- * 
- */
 public class Product implements Serializable {
 
 	private static final long serialVersionUID = 1L;

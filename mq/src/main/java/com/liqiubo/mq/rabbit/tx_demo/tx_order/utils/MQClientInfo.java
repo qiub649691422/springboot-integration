@@ -6,12 +6,6 @@ import org.springframework.stereotype.Component;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 
-/**
- * 
- * @author 小五老师-云析学院
- * @createTime 2018年12月11日 下午8:29:15
- * 
- */
 @Component
 public class MQClientInfo {
 	

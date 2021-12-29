@@ -5,12 +5,6 @@ import org.springframework.amqp.core.Message;
 
 import com.rabbitmq.client.Channel;
 
-/**
- * 
- * @author 小五老师
- * @createTime 2018年7月24日 上午11:48:27
- * 
- */
 public interface IProductService {
 	
 	public int updateProduct(Order order) throws Exception;

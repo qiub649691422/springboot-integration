@@ -12,12 +12,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.rabbitmq.client.Channel;
 
-/**
- * 
- * @author 小五老师
- * @createTime 2018年7月24日 上午11:48:27 
- *  
- */
 @Service
 public class ProductServiceImpl implements IProductService {
 

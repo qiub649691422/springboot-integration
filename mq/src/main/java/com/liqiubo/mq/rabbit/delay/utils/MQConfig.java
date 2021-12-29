@@ -21,8 +21,6 @@ import org.springframework.stereotype.Component;
 
 /**
  * 
- * @author 小五老师-云析学院
- * @createTime 2018年10月26日 下午3:55:43
  * 初始化队列、交换器及绑定
  */
 @Component

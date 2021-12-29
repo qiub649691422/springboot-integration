@@ -13,9 +13,6 @@ import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
 /**
- * 
- * @author 小五老师-云析学院
- * @createTime 2018年11月11日 下午5:50:47
  * Jeids config
  */
 @Configuration

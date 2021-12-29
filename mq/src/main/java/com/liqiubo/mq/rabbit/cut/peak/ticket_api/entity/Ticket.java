@@ -4,12 +4,7 @@
  */
 
 package com.liqiubo.mq.rabbit.cut.peak.ticket_api.entity;
-/**
- * 
- * @author 小五老师-云析学院
- * @createTime 2018年10月24日 下午9:42:59
- * 
- */
+
 public class Ticket {
 
 	private String ticketId;

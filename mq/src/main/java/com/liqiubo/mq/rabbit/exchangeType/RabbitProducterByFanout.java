@@ -10,8 +10,6 @@ import com.rabbitmq.client.MessageProperties;
 
 /**
  * 
- * @author 小五老师
- * @createTime 2018年9月4日 下午2:44:47
  * fanout类型交换器：把所有发送到该交换器的消息路由到所有与该交换器绑定的队列中
  */
 public class RabbitProducterByFanout {

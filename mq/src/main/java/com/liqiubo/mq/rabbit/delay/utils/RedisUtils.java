@@ -17,8 +17,6 @@ import redis.clients.jedis.Tuple;
 
 /**
  * 
- * @author 小五老师
- * @createTime 2018年7月22日 下午8:57:16
  * Redis Utils
  */
 @Component

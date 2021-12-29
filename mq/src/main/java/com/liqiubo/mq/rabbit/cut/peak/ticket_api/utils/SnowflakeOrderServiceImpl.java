@@ -2,12 +2,6 @@ package com.liqiubo.mq.rabbit.cut.peak.ticket_api.utils;
 
 import org.springframework.stereotype.Component;
 
-/**
- * 
- * @author 小五老师
- * @createTime 2018年9月3日 下午5:55:23
- * 
- */
 @Component
 public class SnowflakeOrderServiceImpl {
 

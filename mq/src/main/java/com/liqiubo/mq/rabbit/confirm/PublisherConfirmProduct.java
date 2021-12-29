@@ -17,12 +17,6 @@ import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.MessageProperties;
 
-/**
- * 
- * @author 小五老师
- * @createTime 2018年9月4日 下午2:44:47
- * 
- */
 public class PublisherConfirmProduct {
 
 	private static final String EXCHANGE_NAME = "demo.exchange"; //交换器名称

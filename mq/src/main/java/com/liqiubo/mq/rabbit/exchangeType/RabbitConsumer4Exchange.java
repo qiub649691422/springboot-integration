@@ -13,9 +13,6 @@ import com.rabbitmq.client.DefaultConsumer;
 import com.rabbitmq.client.Envelope;
 
 /**
- * 
- * @author 小五老师
- * @createTime 2018年9月4日 下午2:44:30
  * 交换器类型测试客户端
  */
 public class RabbitConsumer4Exchange {

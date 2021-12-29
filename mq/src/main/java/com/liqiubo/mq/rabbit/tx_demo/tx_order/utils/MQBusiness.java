@@ -8,12 +8,6 @@ import org.springframework.stereotype.Component;
 
 import com.rabbitmq.client.Channel;
 
-/**
- * 
- * @author 小五老师-云析学院
- * @createTime 2018年12月11日 下午4:36:38
- * 
- */
 @Component
 public class MQBusiness {
 	

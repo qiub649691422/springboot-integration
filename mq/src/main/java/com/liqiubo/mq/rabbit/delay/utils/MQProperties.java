@@ -6,8 +6,6 @@
 package com.liqiubo.mq.rabbit.delay.utils;
 /**
  * 
- * @author 小五老师-云析学院
- * @createTime 2018年10月26日 下午4:40:00
  * 定义MQ中所需要的交换器名、队列名及绑定值
  */
 public class MQProperties {

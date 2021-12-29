@@ -4,12 +4,6 @@ import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-/**
- * 
- * @author 小五老师-云析学院
- * @createTime 2019年1月7日 下午8:10:11
- * 
- */
 @Document(collection="product")
 public class Product {
 

@@ -15,12 +15,6 @@ import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-/**
- * 
- * @author 小五老师-云析学院
- * @createTime 2019年1月5日 下午3:33:47
- * 
- */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations={"classpath:spring-servlet.xml"})
 public class UpdateTest {

@@ -1,11 +1,5 @@
 package com.liqiubo.mq.rabbit.cut.peak.ticket_client.utils;
 
-/**
- * 
- * @author 小五老师-云析学院
- * @createTime 2018年10月26日 下午4:40:00
- * 
- */
 public class MQProperties {
 
 	public static final String QUEUE_NAME="topic.ticket";

@@ -14,12 +14,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
-/**
- * 
- * @author 小五老师-云析学院
- * @createTime 2018年10月24日 下午9:36:17
- * 
- */
 @Service
 public class TicketServiceImpl implements ITicketService {
 	

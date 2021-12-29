@@ -12,12 +12,6 @@ import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-/**
- * 
- * @author 小五老师-云析学院
- * @createTime 2018年11月11日 下午5:35:58
- * 
- */
 @Service("mqDelayMessageServiceImpl")
 public class MQDelayMessageServiceImpl implements DelayMessageService {
 

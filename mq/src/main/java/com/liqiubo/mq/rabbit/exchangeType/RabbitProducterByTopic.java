@@ -10,8 +10,6 @@ import com.rabbitmq.client.MessageProperties;
 
 /**
  * 
- * @author 小五老师
- * @createTime 2018年9月4日 下午2:44:47
  * Topic类型交换器：同direct，但是这里的匹配规则有些不同，允许使用表达式模糊匹配
  */
 public class RabbitProducterByTopic {

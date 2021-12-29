@@ -19,12 +19,6 @@ import java.util.List;
 import static org.springframework.data.mongodb.core.query.Criteria.where;
 import static org.springframework.data.mongodb.core.query.Query.query;
 
-/**
- * 
- * @author 小五老师-云析学院
- * @createTime 2019年1月5日 下午3:33:47
- * 
- */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations={"classpath:spring-servlet.xml"})
 public class FindTest {

@@ -7,8 +7,6 @@ import com.rabbitmq.client.MessageProperties;
 
 /**
  * 
- * @author 小五老师
- * @createTime 2018年9月4日 下午2:44:47
  * 交换器声明
  */
 public class RabbitProducterDeclare {

@@ -13,12 +13,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 
-/**
- * 
- * @author 小五老师-云析学院
- * @createTime 2018年10月26日 下午4:36:38
- * 
- */
 @Component
 @RabbitListener(queues=MQProperties.QUEUE_NAME)
 public class MQBusiness {
