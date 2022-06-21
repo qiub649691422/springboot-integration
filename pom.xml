@@ -48,7 +48,7 @@
         <joda-time.version>2.10.5</joda-time.version>
         <mockito.version>3.1.0</mockito.version>
         <mongodb.version>3.11.2</mongodb.version>
-        <mysql.version>8.0.18</mysql.version>
+        <mysql.version>8.0.28</mysql.version>
         <neo4j-ogm.version>3.2.3</neo4j-ogm.version>
         <netty.version>4.1.43.Final</netty.version>
         <okhttp3.version>3.14.4</okhttp3.version>
